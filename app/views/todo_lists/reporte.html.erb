@@ -1,0 +1,22 @@
+<div>
+    <h1>List and Tasks</h1>
+<table>
+    <thead>
+        <tr>
+            <th>title</th>
+            <th>Description</th>
+            <th>Task</th>
+        </tr>
+        <tbody>
+            <% @todo_lists.all_todo_list_task.each do |todo_list| %>
+                <tr>
+                     <td><%= todo_list.title %></td>
+                     <td><%= todo_list.description %></td>
+                         <td><%= todo_list.task %></td>
+                </tr>
+            <%end%>
+
+        </tbody>
+    </thead>
+</table> 
+</div>

@@ -5,7 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
+#config.active_job.queue_adapter =: sidekiq
 module Myapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

@@ -17,8 +17,7 @@ gem 'paperclip'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-#for emails sidekid
-gem 'sidekiq'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -73,6 +72,8 @@ gem 'therubyracer'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-digitalocean'
+#for emails sidekid
+gem 'sidekiq'
 #gemas para PDF
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'

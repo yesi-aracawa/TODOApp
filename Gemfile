@@ -7,7 +7,7 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
 # test
 group :development, :test do
-  gem 'rspec-rails', '~> 3.7'
+ gem 'rspec-rails', '~> 3.8'
 end
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -74,6 +74,8 @@ gem 'omniauth'
 gem 'omniauth-digitalocean'
 #for emails sidekid
 gem 'sidekiq'
+#associations test
+gem 'shoulda'
 #gemas para PDF
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'

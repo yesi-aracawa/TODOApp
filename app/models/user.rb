@@ -4,6 +4,15 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :todo_lists
+  validates_presence_of :todo_lists
+  def exist?
+    !email.blank?
+  end
   has_attached_file :avatar, styles: { medium: "300x300", thumb: "100x100" }
-  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
+  # Validate content type
+  validates_attachment_content_type :avatar, content_type: /\Aimage/
+  # Validate filename
+  validates_attachment_file_name :avatar, matches: [/png\Z/, /jpe?g\Z/]
+  # Explicitly do not validate
+  do_not_validate_attachment_file_type :avatar
 end

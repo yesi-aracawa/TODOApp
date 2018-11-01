@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :todo_lists
-  validates_presence_of :todo_lists
+  validates :username, uniqueness: true
   def exist?
     !email.blank?
   end

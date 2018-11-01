@@ -76,6 +76,7 @@ gem 'omniauth-digitalocean'
 gem 'sidekiq'
 #associations test
 gem 'shoulda'
+gem 'shoulda-matchers'
 #gemas para PDF
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'

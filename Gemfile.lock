@@ -195,7 +195,7 @@ GEM
     rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
-    rspec-rails (3.8.0)
+    rspec-rails (3.8.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -220,6 +220,12 @@ GEM
     selenium-webdriver (3.14.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    shoulda (3.6.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (~> 3.0)
+    shoulda-context (1.2.2)
+    shoulda-matchers (3.1.2)
+      activesupport (>= 4.0.0)
     sidekiq (5.2.2)
       connection_pool (~> 2.2, >= 2.2.2)
       rack-protection (>= 1.5.0)
@@ -284,9 +290,11 @@ DEPENDENCIES
   paperclip
   puma (~> 3.11)
   rails (~> 5.2.1)
-  rspec-rails (~> 3.7)
+  rspec-rails (~> 3.8)
   sass-rails (~> 5.0)
   selenium-webdriver
+  shoulda
+  shoulda-matchers
   sidekiq
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -303,4 +311,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.5
+   1.16.6
